@@ -1,0 +1,134 @@
+\documentclass[fontset=windows]{article}
+\usepackage[margin=1in]{geometry}%设置边距，符合Word设定
+\usepackage{fontspec}
+\setmainfont{Calibri}
+\usepackage{ctex}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage{appendix}
+\usepackage{booktabs}	% 加入表格
+\usepackage{amsmath}    % 数学
+\numberwithin{equation}{section}
+\usepackage{amssymb}    % 数学符号
+\usepackage{amsthm}     % 定理环境
+\usepackage{bm}         % 数学粗体
+\usepackage{tikz}       % 绘图
+\usepackage{colortbl}	% 高亮表格
+\usepackage[dvipsnames]{xcolor} 	% 字体颜色
+\usepackage{graphicx}	% 加入图片
+\usetikzlibrary{patterns}
+\usepackage[shortlabels,inline]{enumitem}
+\usepackage{caption}
+\usepackage{subcaption}
+\graphicspath{{Figures/}} 
+\captionsetup[figure]{
+    name=Fig.,
+    labelsep=period,
+    font=small,
+    labelfont=bf
+}
+\numberwithin{figure}{section}
+\usepackage{hyperref} % 对目录生成链接，注：该宏包可能与其他宏包冲突，故放在所有引用的宏包之后
+\usepackage[nameinlink]{cleveref} % 更智能的交叉引用
+\hypersetup{colorlinks = true,  % 将链接文字带颜色
+	bookmarksopen = true, % 展开书签
+	bookmarksnumbered = true, % 书签带章节编号
+	pdftitle = Individual Decision Making, % 标题
+	pdfauthor = Zhuangfu Zhao} % 作者
+\bibliographystyle{plain} % 参考文献引用格式
+\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
+\renewcommand{\contentsname}{\centerline{Contents}} %经过设置word格式后，将目录标题居中
+
+%---------- 定理设置  --------------
+\theoremstyle{plain}
+%\addtobeamertemplate{theorem begin}{\normalfont\rmfamily}{}
+\newtheorem{theorem}{Theorem}
+\numberwithin{theorem}{section}
+\newtheorem{lemma}{Lemma}
+\numberwithin{lemma}{section}
+\newtheorem{corollary}{Corollary}
+\numberwithin{corollary}{section}
+%\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\numberwithin{definition}{section}
+\newtheorem{proposition}{Proposition}
+\numberwithin{proposition}{section}
+\newtheorem{example}{Example}
+\numberwithin{example}{section}
+\newtheorem{assumption}{Assumption}
+\numberwithin{assumption}{section}
+
+%---------- 证明和解环境 ----------
+\renewenvironment{proof}[1][Proof]{\par\textbf{#1:}%
+\enspace\ignorespaces}{\par}
+\newenvironment{solution}{\par\textbf{Solution:}%
+\enspace\ignorespaces}{\par}
+
+%---------- 数学符号 ----------
+\newcommand{\ud}{\mathrm{d}}
+
+%---------- 证明符号 ----------
+\newcommand{\QED}{\hfill\ensuremath{\square}}
+\newcommand{\logiceq}{\Leftrightarrow}
+\newcommand{\suff}{\Rightarrow}
+\newcommand{\nece}{\Leftarrow}
+
+%---------- 环境美化 ----------
+% \usepackage[most]{tcolorbox}
+% \newcommand{\newtcbenvironment}[2]{
+%     \tcolorboxenvironment{#1}{#2, enhanced, breakable, sharp corners, boxrule=1pt}
+%     \tcolorboxenvironment{#1*}{#2, enhanced, breakable, rounded corners, boxrule=1pt}
+% }
+% \newtcbenvironment{theorem}{colframe=RoyalPurple, colback=RoyalPurple!8}
+% \newtcbenvironment{proposition}{colframe=RoyalPurple, colback=RoyalPurple!8}
+% \newtcbenvironment{corollary}{colframe=NavyBlue, colback=SkyBlue!8}
+% \newtcbenvironment{lemma}{colframe=NavyBlue, colback=SkyBlue!8}
+% \newtcbenvironment{claim}{colframe=NavyBlue, colback=SkyBlue!8}
+
+% \newtcbenvironment{definition}{colframe=ForestGreen, colback=ForestGreen!5}
+% \newtcbenvironment{example}{colframe=RawSienna, colback=RawSienna!5}
+% \newtcbenvironment{problem}{colframe=WildStrawberry!30, colback=WildStrawberry!5}
+
+%---------- 调节公式的间距 ----------
+%\AtBeginDocument{
+%	\setlength{\abovedisplayskip}{4pt plus 1pt minus 1pt}
+%	\setlength{\belowdisplayskip}{4pt plus 1pt minus 1pt}
+%	\setlength{\abovedisplayshortskip}{2pt}
+%	\setlength{\belowdisplayshortskip}{2pt}
+%	\setlength{\arraycolsep}{2pt}
+%}
+
+
+\title{\heiti\zihao{2} Quantitative Spatial Model: Theory and Application}
+\author{\songti Tianyi Liang and Zhuangfu Zhao}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+
+\section{Introduction}
+
+\noindent Classical trade theories (Ricardo, Heckscher-Ohlin), while extremely useful in highlighting the economic forces behind trade, 
+are very difficult to generalize to a set-up with many trading partners and bilateral trade costs. 
+Thus the classical theories do not provide much guidance in doing empirical work (lack of quantifiability). Because of this difficulty, 
+those doing empirical work in trade began using a statistical model known as the gravity equation. 
+
+It is no exaggeration to say that the gravity equation is one of the most successful empirical relationships in all of economics. 
+Inspite of its great success in empirical work, the gravity equation was criticized due to its absence of theoretical foundations, 
+which makes interpretations and counterfactual simulations impossible. 
+
+We focus on the Eaton-Kortum (henceforth EK) model and its applications, originated from the Ricardo model 
+and provides a powerful framework to quantify trade flows in the real world. 
+
+\section{DFS}
+
+
+
+
+\end{document}
