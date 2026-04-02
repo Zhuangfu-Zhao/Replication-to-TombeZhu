@@ -1,2 +1,6 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+<<<<<<< HEAD
 \contentsline {section}{\numberline {2}The Ricardo Model}{1}{section.2}%
+=======
+\contentsline {section}{\numberline {2}DFS}{1}{section.2}%
+>>>>>>> c0a0c149bd40093a123a18488f20c070b8432b87
