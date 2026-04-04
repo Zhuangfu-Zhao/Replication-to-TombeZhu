@@ -154,25 +154,64 @@ Assume that country $1$ has comparative advantage in the production of good $1$ 
 
 The preferences for two goods are the same (Cobb-Douglas) in two countries, given by 
 \begin{equation*}
-    U^i = \alpha_1 \ln c^i_1 + \alpha_2 \ln c^i_2. 
+    U^i = a_1 \ln c^i_1 + a_2 \ln c^i_2. 
 \end{equation*}
-where $i\in\{H,F\}$. 
+where $i\in\{H,F\}$, $a_1 + a_2 = 1$. 
 
 \subsection{Autarky} 
 \noindent The optimization problem for consumers in country $i$ is given by 
 \begin{align*}
-    & \max \alpha_1 \ln c^i_1 + \alpha_2 \ln c^i_2, \\ 
-    & \mathrm{s.t.}\quad p^i_1 c^i_1 + p^i_2 c^i_2 \leq w^i l^i, 
+    & \max_{c^i_1, c^i_2} a_1 \ln c^i_1 + a_2 \ln c^i_2, \\ 
+    & \mathrm{s.t.} p^i_1 c^i_1 + p^i_2 c^i_2 \leq w^i l^i, 
 \end{align*}
 where $l^i = l^i_1 + l^i_2$. 
 
-The optimization problem for firms (sectors) in country $i$ is given by 
+The Walrasian demand functions are given by 
+\begin{align}
+    & c^i_1 = \frac{a_1 w^i l^i}{p^i_1}, \label{eq.rd1} \\ 
+    & c^i_2 = \frac{a_2 w^i l^i}{p^i_2}. \label{eq.rd2}
+\end{align}
+
+The optimization problem for the firm (sector, country) in country $i$ is given by 
 \begin{align*}
-    & \max_{l^i_1} p^i_1 z^i_1 l^i_1 - w^i l^i_1, \\ 
-    & \max_{l^i_2} p^i_2 z^i_2 l^i_2 - w^i l^i_2. 
+    & \max_{l^i_1, l^i_2} (p^i_1 z^i_1 - w^i) l^i_1 + (p^i_2 z^i_2 - w^i) l^i_2, \\ 
+    & \mathrm{s.t.} l^i_1 + l^i_2 = l^i. 
 \end{align*}
 
-\section{The Ricardian model with a continuum of goods} 
+In order to reach an equilibrium under the Inada condition from the consumer side, on the firm side we must have 
+\begin{equation}
+    p^i_1 z^i_1 = p^i_2 z^i_2 = w^i. \label{eq.rwage}
+\end{equation}
+
+The goods market clearing conditions imply 
+\begin{align}
+    & c^i_1 = z^i_1 l^i_1, \label{eq.req1} \\ 
+    & c^i_2 = z^i_2 l^i_2. \label{eq.req2}
+\end{align} 
+
+Substituting \Cref{eq.rwage} for prices in \Cref{eq.rd1} and \Cref{eq.rd2} gives 
+\begin{align*}
+    & c^i_1 = a_1 z^i_1 l^i, \\ 
+    & c^i_2 = a_2 z^i_2 l^i.
+\end{align*}
+By \Cref{eq.req1} and \Cref{eq.req2} we have 
+\begin{align}
+    & l^i_1 = a_1 l^i, \\ 
+    & l^i_2 = a_2 l^i.  
+\end{align}
+The labor is allocated to each good. Using the production function and goods market clearing we can obtain the rest of the allocations. 
+
+\subsection{Free Trade}
+\noindent Under free trade international prices equalize. Regarding good $1$ as the numeraire, $p$ represents the price of good $2$ in terms of good $1$. 
+Since $\frac{z^H_1}{z^F_1} > \frac{z^H_2}{z^F_2}$, in order that there is incentive for countries to specialize and trade, we must have 
+\begin{equation}
+    \frac{z^H_1}{z^F_1} \geq p \geq \frac{z^H_2}{z^F_2}. \label{eq.rtrade} 
+\end{equation}
+
+You can see there are three cases of \Cref{eq.rtrade} to be discussed. 
+
+
+\section{The DFS Model} 
 
 \noindent The model of Dornbusch, Fischer, and Samuelson (1977), henceforth DFS, is based on the Ricardian model where trade and 
 specialization patterns are determined by different technologies (productivities). 
