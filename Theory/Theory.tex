@@ -125,11 +125,63 @@ This gap between empirical relevance and theoretical rigor motivated the develop
 
 The Eaton-Kortum (henceforth EK) model, rooted in the Ricardian tradition, addresses this need by introducing a probabilistic representation of productivity differences across countries and goods. 
 It not only provides a micro-founded derivation of the gravity equation but also incorporates bilateral trade costs and multiple countries naturally, 
-making it fully consistent with real-world trade patterns. We focus on the evolution of international trade models from the Ricardo model to 
+making it fully consistent with real-world trade patterns. We focus on the evolution of international trade models from the Ricardian model to 
 the EK model, followed by a replication to Tombe \& Zhu (2019).
 
-\section{The Ricardo Model}
 
+\section{The Ricardian Model}
+
+\noindent The Ricardian model is a model of \textbf{perfect competition} where countries produce the same goods using \textbf{different technologies}. 
+The Ricardian model predicts that countries may specialize in the production of certain ranges of goods. 
+We consider the simple version of the model with two countries ($H$ for home; $F$ for foreign) and two goods ($1$ and $2$). 
+
+The production technologies are different for two goods in two countries, given by 
+\begin{align*}
+    & y^H_1 = z^H_1 l^H_1, \\
+    & y^H_2 = z^H_2 l^H_2, \\ 
+    & y^F_1 = z^F_1 l^F_1, \\ 
+    & y^F_2 = z^F_2 l^F_2. 
+\end{align*}
+Assume that country $1$ has absolute advantage in the production of both goods 
+\begin{align*}
+    & z^H_1 > z^F_1, \\ 
+    & z^H_2 > z^F_2. 
+\end{align*}
+Assume that country $1$ has comparative advantage in the production of good $1$ and country $2$ in good $2$ \footnote{We write this inequality in this form since it can be readily expanded to the continuum of goods case and the fraction can be viewed as a function of goods in $[0, 1]$.} 
+\begin{equation*}
+    \frac{z^H_1}{z^F_1} > \frac{z^H_2}{z^F_2}. 
+\end{equation*}
+
+The preferences for two goods are the same (Cobb-Douglas) in two countries, given by 
+\begin{equation*}
+    U^i = \alpha_1 \ln c^i_1 + \alpha_2 \ln c^i_2. 
+\end{equation*}
+where $i\in\{H,F\}$. 
+
+\subsection{Autarky} 
+\noindent The optimization problem for consumers in country $i$ is given by 
+\begin{align*}
+    & \max \alpha_1 \ln c^i_1 + \alpha_2 \ln c^i_2, \\ 
+    & \mathrm{s.t.}\quad p^i_1 c^i_1 + p^i_2 c^i_2 \leq w^i l^i, 
+\end{align*}
+where $l^i = l^i_1 + l^i_2$. 
+
+The optimization problem for firms (sectors) in country $i$ is given by 
+\begin{align*}
+    & \max_{l^i_1} p^i_1 z^i_1 l^i_1 - w^i l^i_1, \\ 
+    & \max_{l^i_2} p^i_2 z^i_2 l^i_2 - w^i l^i_2. 
+\end{align*}
+
+\section{The Ricardian model with a continuum of goods} 
+
+\noindent The model of Dornbusch, Fischer, and Samuelson (1977), henceforth DFS, is based on the Ricardian model where trade and 
+specialization patterns are determined by different technologies (productivities). 
+The DFS model expands the set of goods to a continuous one, i.e., $\omega \in [0,1]$ and introduces the shipment costs. 
+
+
+
+
+\section{The EK Model}
 
 
 
